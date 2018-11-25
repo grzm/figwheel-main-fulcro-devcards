@@ -1,0 +1,5 @@
+^{:watch-dirs ["src" "cards"]
+  :css-dirs ["resources/public"]
+  :extra-main-files {:cards {:main com.grzm.ex.fmfd.cards}}}
+{:main com.grzm.ex.fmfd
+ :devcards true}

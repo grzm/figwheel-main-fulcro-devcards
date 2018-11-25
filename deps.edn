@@ -1,0 +1,10 @@
+{:paths ["resources" "src" "target"]
+ :deps {fulcrologic/fulcro {:mvn/version "2.6.16"}
+        org.clojure/clojure {:mvn/version "RELEASE"}
+        org.clojure/clojurescript {:mvn/version "1.10.439"}}
+ :aliases {:dev {:extra-paths ["cards"]
+                 :extra-deps {com.bhauman/figwheel-main {:mvn/version "0.1.9"}
+                              devcards                  {:mvn/version "0.2.6"}}
+                 :main-opts ["--main" "figwheel.main"
+                             "--build" "dev"
+                             "--repl"]}}}
